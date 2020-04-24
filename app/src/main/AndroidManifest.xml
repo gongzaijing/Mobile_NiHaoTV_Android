@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.china.cibn.bangtvmobile"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 用户权限设置 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="com.china.cibn.bangtvmobile.BangtvApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.common.SplashActivity"
+            android:theme="@style/ColorTranslucentTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Android 7.0 照片、APK下载保存路径-->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.update.AndroidOPermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            >
+        </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.china.cibn.bangtvmobile.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--BANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTV____start-->
+        <!-- 主界面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.common.BangTVMainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/MainActivityColorTranslucentTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.maillogin.LoginActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.reg.RegMailActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 最近观看界面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.history.HistorylistActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+
+        <!-- 电影列表 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.movielist.MovieListActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <!-- 电影详情页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.moviedetails.MovieDetailsActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 排行榜页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.ranking.RankListActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+
+        <!-- 专题汇总页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.special.SpecialListActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 专题模板页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.special.SpecialTemplateActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 搜索页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.search.SearchListActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+
+        <!-- 点播播放器 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.video.play.VideoPlayerActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+        />
+
+        <!-- 直播播放器 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.video.live.LivePlayerActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            />
+
+
+        <!-- 关于我们页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.setting.AboutUsActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <!-- 关于我们页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.setting.SettingActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <!-- 数字电台页面 -->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.radio.RadioListActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+        <!--App介绍页面-->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.home.setting.AppIntroduceActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <!--BANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTVBANGTV____end-->
+
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.wxlogin.WXLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <!--开通会员-->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.vip.VipActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxfddc2d12b01ff339"/>
+            </intent-filter>
+        </activity>
+        <!--会员协议-->
+        <activity
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.vip.ProtocolDialog"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/feedbackDialog"/>
+        <!---->
+        <!--微信登录配置 start-->
+        <activity android:name="com.china.cibn.bangtvmobile.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@style/wx_login_style"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--微信支付配置 end-->
+        <activity android:name="com.china.cibn.bangtvmobile.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@style/wx_login_style"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+           />
+        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+        <!--微信登录配置 end-->
+
+        <receiver android:name=".bangtv.utils.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.china.cibn.bangtvmobile.bangtv.module.user.vip.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.china.cibn.bangtvmobile.bangtv.daemon.jpushRecevicer"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.china.cibn.bangtvmobile" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:value="5acb29fba40fa30e6600005a" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="default_channel" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

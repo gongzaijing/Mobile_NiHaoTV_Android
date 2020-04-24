@@ -1,0 +1,289 @@
+<FrameLayout android:id="@+id/playerFrame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    >
+<RelativeLayout
+    android:id="@+id/too_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    >
+    <com.china.cibn.bangtvmobile.bangtv.module.video.media.VideoPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="center" />
+    <RelativeLayout
+        android:id="@+id/re_vip_isdis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="@string/liveplay_vipdisplay" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buffering_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+
+        <com.china.cibn.bangtvmobile.bangtv.widget.CircleProgressView
+            android:id="@+id/video_loading_progress"
+            android:layout_width="@dimen/circle_progress_view_small_size"
+            android:layout_height="@dimen/circle_progress_view_small_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            app:matProg_barColor="@color/white_30"
+            app:matProg_barWidth="@dimen/circle_progress_view_default_border_width"
+            app:matProg_progressIndeterminate="true" />
+
+        <TextView
+            android:id="@+id/video_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_loading_progress"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/default_general_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_medium_text_size" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/video_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:visibility="gone" >
+
+        <!--<ImageView-->
+            <!--android:id="@+id/bili_anim"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/anim_video_loading" />-->
+
+        <TextView
+            android:id="@+id/video_start_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/video_init"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            android:textSize="@dimen/default_tiny_text_size" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gesture_volume_layout"
+        android:layout_width="@dimen/circle_default_size"
+        android:layout_height="@dimen/bangumi_details_pic_width"
+        android:layout_centerInParent="true"
+        android:background="@drawable/souhu_player_gesture_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/gesture_iv_player_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/souhu_player_volume" />
+
+        <TextView
+            android:id="@+id/geture_tv_volume_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gesture_iv_player_volume"
+            android:layout_centerHorizontal="true"
+            android:gravity="right"
+            android:text="80%"
+            android:textColor="#ffececec" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gesture_bright_layout"
+        android:layout_width="@dimen/circle_default_size"
+        android:layout_height="@dimen/bangumi_details_pic_width"
+        android:layout_centerInParent="true"
+        android:background="@drawable/souhu_player_gesture_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/gesture_iv_player_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/souhu_player_bright" />
+
+        <TextView
+            android:id="@+id/geture_tv_bright_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gesture_iv_player_bright"
+            android:layout_centerHorizontal="true"
+            android:gravity="right"
+            android:text="80%"
+            android:textColor="#ffececec" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/media_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:padding="@dimen/default_general_margin"
+        android:src="@drawable/ic_player_locked_2" />
+    <RelativeLayout
+    android:id="@+id/media_actions"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_default_height"
+                android:background="@color/media_controller_bg">
+
+
+                <ImageView
+                    android:id="@+id/media_controller_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/default_general_margin"
+                    android:padding="@dimen/default_general_margin"
+                    android:src="@drawable/bili_player_back_button"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/media_controller_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/default_general_margin"
+                    android:layout_toEndOf="@+id/media_controller_back"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_medium_text_size" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/media_controller_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/media_controller_bg"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/media_controller_controls_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mediacontroller_bottom_layout_center_margin"
+                    android:layout_marginRight="@dimen/mediacontroller_bottom_layout_center_margin"
+                    android:layout_marginTop="@dimen/mediacontroller_buttons_top_margin"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/media_controller_controls_lock_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/default_general_margin"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/default_tiny_margin">
+
+                        <TextView
+                            android:id="@+id/select_tv"
+                            android:layout_width="@dimen/home_recommend_foot_layout_height"
+                            android:layout_height="@dimen/video_details_text_height"
+                            android:background="@drawable/play_txet_bg_bangtv"
+                            android:gravity="center"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_dialog"
+        android:layout_width="@dimen/activity_video_live_lines"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="#000000"
+        android:alpha="0.9"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+          >
+            <ListView
+                android:id="@+id/clumnlist"
+                android:layout_width="@dimen/bangumi_details_pic_width"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/user_home_pager_live_layout_height"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#00000000"
+                android:dividerHeight="@dimen/live_item_title_image_size"
+                android:scrollbars="none"/>
+            <TextView
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+            <ListView
+                android:id="@+id/channellist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/user_home_pager_live_layout_height"
+                android:layout_marginLeft="@dimen/default_grow_margin"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#00000000"
+                android:dividerHeight="@dimen/live_item_title_image_size"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</FrameLayout>

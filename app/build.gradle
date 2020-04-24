@@ -1,0 +1,185 @@
+//产品名
+def PRODUCT_NAME = "NiHaoTV"
+//打包时间
+def packageTime() {
+    return new Date().format("yyyyMMdd",
+            TimeZone.getTimeZone("GMT+8"))
+}
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+//        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+    }
+}
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+Properties props = new Properties()
+props.load(new FileInputStream(file("configuration.properties")))
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.china.cibn.bangtvmobile"
+        minSdkVersion 21
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 2803
+        versionName "1.0.2803"
+
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "f9e03ecd7822c4bf03a8eeb4",
+                JPUSH_CHANNEL : "developer-default",
+        ]
+
+        flavorDimensions "default"
+
+    }
+    signingConfigs {
+        forcetech {
+            keyAlias "forcetech"
+            keyPassword "forcetech"
+            storeFile file("C:/android/keystore/android.keystore")
+            storePassword "forcetech"
+        }
+
+    }
+    productFlavors {
+        mobilebangtv {
+            applicationId 'com.china.cibn.bangtvmobile'
+            minSdkVersion 21
+            targetSdkVersion 28
+            versionCode 3201
+            versionName "1.0.3201"
+            signingConfig signingConfigs.forcetech
+            resValue "string", "app_name", "NiHaoTV"
+        }
+//       mobilenetrange {
+//            applicationId 'com.china.cibn.netrangemobile'
+//            minSdkVersion 21
+//            targetSdkVersion 28
+//            versionCode 2803
+//            versionName "1.0.2803"
+//            signingConfig signingConfigs.forcetech
+//            resValue "string", "app_name", "NiHaoTV(English)"
+//           ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+//        }
+
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.forcetech
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.forcetech
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions{
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //打包自动修改apk名称,调试时不打开
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                def baseName = PRODUCT_NAME + "_V" +defaultConfig.versionCode  + "_" + "${packageTime()}" + "_" + "${variant.productFlavors[0].name}" + ".apk"
+//                outputFileName = baseName
+//            }
+//        }
+//    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.alibaba:fastjson:1.1.56.android'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'org.jsoup:jsoup:1.8.3'
+//    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+//    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+//    implementation 'com.github.ctiao:ndkbitmap-armv5:0.9.21'
+//    implementation 'com.github.ctiao:ndkbitmap-x86:0.9.21'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+    implementation 'com.zhy:flowlayout-lib:1.0.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+    implementation 'com.trello:rxlifecycle-components:0.6.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.3.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-design:0.3.0'
+    implementation 'com.facebook.stetho:stetho:1.3.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.bilibili:magicasakura:0.1.1@aar'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+//    implementation files('libs/okhttp-3.8.1.jar')
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+    implementation files('libs/afinal_libraty.jar')
+    implementation 'cn.jiguang.sdk:jpush:3.1.2'
+    // 此处以JPush 3.1.1 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.2.0'
+    // 此处以JCore 1.1.9 版本为例。
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+
+}

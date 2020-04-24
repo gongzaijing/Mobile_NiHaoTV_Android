@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="info_play_times_format">%d</string>
+    <string name="info_reviews_format">%d</string>
+    <string name="hotbitmapgg">Click on the avatar to log in</string>
+    <string name="github_link">Service Mailbox:&#160;nihao_service@126.com</string>
+    <string name="sina_weibo_link">Official Website:&#160;www.nihaotv.net</string>
+    <string name="facebook_link">Facebook:&#160;NiHao TV</string>
+    <string name="login_hint_account">请输入您的邮箱账号</string>
+    <string name="login_hint_password">请输入您的密码</string>
+    <string name="login">login</string>
+    <string name="sp_videos">专题剧集</string>
+    <string name="check_update">Check update</string>
+    <string name="logout">Logout</string>
+    <string name="introduction">brief introduction</string>
+    <string name="more">More</string>
+    <string name="download">download</string>
+    <string name="to_them">追番</string>
+    <string name="search_hint">Enter the film initials</string>
+    <string name="rank">Ranking List</string>
+    <string name="play_immediately">Play now</string>
+    <string name="selection">Selection set number</string>
+
+
+
+
+    <string name="video_init">Initialize Player…</string>
+    <string name="video_loading">Loading…</string>
+    <string name="video_error_title">Cannot play video</string>
+    <string name="video_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming tothis device.</string>
+    <string name="video_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="video_error_button">OK</string>
+
+
+    <!-- Navigation Items -->
+    <string name="item_home">Home Page</string>
+    <string name="item_group">关注的人</string>
+    <string name="item_tracker">我的钱包</string>
+    <string name="item_downloaded">离线缓存</string>
+    <string name="item_favourite">我的收藏</string>
+    <string name="item_history">Recently Watch</string>
+    <string name="item_settings">Settings</string>
+    <string name="item_theme">主题选择</string>
+    <string name="item_app">应用推荐</string>
+    <string name="item_vip">Membership Renewals</string>
+
+
+    <!--App 介绍-->
+    <!--<string name="about_user_head_layout">硬币: 47</string>-->
+    <string name="about_introduce">「NiHaoTV(English)」</string>
+    <!--<string name="about_menu_action_share">分享</string>-->
+    <string name="about_developers">About Us</string>
+    <string name="about">Local Information</string>
+    <string name="about_version">V1.0</string>
+
+
+
+
+    <!--bangtv-->
+    <string name="activity_movielist_play">Play</string>
+    <string name="activity_reg_email">&#160;&#160; &#160;&#160;邮&#160;&#160;&#160;&#160;箱</string>
+    <string name="activity_reg_username">&#160;&#160;&#160;&#160;&#160;用户名</string>
+    <string name="activity_reg_password">&#160;&#160;&#160;&#160; 密&#160;&#160;&#160;&#160;码</string>
+    <string name="activity_reg_ispassword">&#160;&#160;&#160;&#160; 确&#160;&#160;&#160;&#160;认</string>
+    <string name="activity_reg">注册</string>
+    <string name="activity_aboutus_text">&#160;&#160; &#160;&#160;NiHaoTV，authorized by Oriental International Media Limited, is a video APP tailored
+  exclusively for overseas Chinese. Featuring simple operation, powerful function,
+        free basic services and applicable to various TV set-top box and smart TV.
+        NiHaoTV devotes itself to providing Chinese programs to the full with the
+        functions of catch-up and boutique VOD.
+
+    </string>
+
+    <string name="activity_about_dingyue">NiHaoTV_Official</string>
+    <string name="activity_about_fuwu">NiHaoTV_Service</string>
+    <string name="activity_login_three">-----Other logins-----</string>
+    <string name="activity_login_forget">Forget password</string>
+    <string name="activity_rangking_title">Billboard</string>
+    <string name="activity_special_title">Special Issues Collection</string>
+    <string name="activity_radio_title">Digital radio</string>
+    <string name="activity_history_title">Historical record</string>
+
+
+    <string name="setting_text1">IP address:</string>
+    <string name="setting_text2">Software version:</string>
+    <string name="setting_text3">MAC address:</string>
+
+    <string name="activity_serach_bangtv">No search results yet</string>
+    <string name="activity_video_player_select">Selection set number</string>
+    <string name="activity_video_liveplayer_select">Channel</string>
+    <string name="liveplay_vipdisplay">This channel is VIP channel, please login in the personal center and open the purchase.</string>
+
+
+    <string name="activity_vip_msg">使用说明:\n·自购买之时起5分钟内生效；
+    \n·购买之后若发现还是无法正常使用，可以尝试重启下NiHaoTV客户端</string>
+
+    <string name="vip_xiexi_content">&#160;&#160;&#160;&#160;&#160;&#160;
+        您在使用NiHaoTV相关产品时受到下文所载的您与NiHaoTV 之间的法律协议的约束。
+        如您同意这些条款，请点击“同意”。如您不同意这些条款，请勿点击“同意”。\n\n
+付款、税款和退款政策\n&#160;&#160;&#160;&#160;&#160;&#160;您同意为您通过NiHaoTV购买
+        的所有产品付款，且NiHaoTV可以就您购买的任何产品以及因您的帐户而发生的或与您的帐
+        户有关的任何额外款项（包括任何适用的税款和滞纳金）从您的支付方式收款。您有责任
+        及时支付所有费用并为所有费用的支付向NiHaoTV提供有效的支付方式。产品一旦出售，交
+        易即确立。
+在任何购买完成前，NiHaoTV保留其通过有关渠道对提供的产品随时变更的权利。在产品售出后，如
+        果随后出现降价或促销，有关渠道不提供价格保护或退款。如果因技术问题导致您所购产
+        品的交付受阻或发生不合理的延误，则您唯一的救济是更换产品或为您延长产品服务，具
+        体由NiHaoTV决定。\n\n
+成为会员\n
+        &#160;&#160;&#160;&#160;&#160;&#160;
+在成为NiHaoTV会员之前，您必须先根据真实、准确信息注册成为NiHaoTV用户。用户所填写的
+        内容与个人资料必须真实有效，否则NiHaoTV有权拒绝其申请或撤销其会员资格，并
+        不予任何赔偿或退还会员服务费。
+作为会员不要将您的帐户信息透露给任何其他人。您自行负责您帐户的保密和安全，并对您
+        帐户发生的或通过您帐户发生的一切活动负全部责任，而且您同意将您帐户出现的
+        任何违反安全原则的情况立即通知客服。对于对您帐户的擅自使用引起的任何损失
+        ，NiHaoTV不承担任何责任。您同意在服务注册时以及在使用服务时提供准确和完整的
+        信息（“NiHaoTV注册资料”），并且您同意为使您的注册资料保持准确和完整而更新您
+        的注册资料。您同意，NiHaoTV可以存储和使用您提供的注册资料，以用于维持您的帐户
+        和从您的帐户中收费。\n\n
+服务\n &#160;&#160;&#160;&#160;&#160;&#160;
+一旦您成为NiHaoTV会员，即视为您认可该项服务标明之价格；成为NiHaoTV会员后，该项服务即时生效。
+会员的增值服务资费标准以NiHaoTV标注的详细资费标价为准，NiHaoTV有权基于自身业务发展需要变更上述资费标准。
+\n\n
+权限及服务期限 \n &#160;&#160;&#160;&#160;&#160;&#160;
+会员服务仅限于申请账号自行使用；会员服务期内不能在NiHaoTV帐号之间转移，禁止赠与、借用、作用、转让或售卖。否则有权在未经通知的情况下取消转让账户、受让账户的会员服务资格，由此带来的损失由会员自行承担。
+同一账号只允许在最多五个设备上使用，超出上述范围使用的，系统将自动封禁该账号，用户可根据公布的解禁流程进行账号解禁，同一账号累计被封禁3次的有权收回该账号使用权或取消该账号会员资格。用户应当自行承担超范围使用而导致的任何损失
+\n\n内容的使用\n &#160;&#160;&#160;&#160;&#160;&#160;
+您只能访问和查看内容，不得直接或通过使用任何设备，软件，互联网网站，或其他方式删除、修改，或规避任何版权，商标等；您不得直接或通过使用任何设备，软件，互联网网站，或其他方式复制、下载、上传、发布、展示、销售、传播或转发内容，除非的书面明确准许。您不得访问或试图访问您未被授权访问的任何帐户。为了保障视频的观看品质和用户视频的播放效果，建议您的带宽要达到4兆以上，否则由用户个人带宽原因导致视频无法播放的问题，将不会承担任何责任。
+\n\n第三方材料\n &#160;&#160;&#160;&#160;&#160;&#160;
+可通过服务获得的某些内容、产品和服务可能包括第三方的材料。可能为方便于您而提供通往第三方网站的链接。您同意，不负责检查或评估任何该等第三方材料或网站或第三方的任何其他材料、产品或服务的内容或准确性，并且，对此不作保证、不承担任何责任、也不负有任何义务。您同意，您将不会以侵犯或违反任何他方权利的方式使用任何第三方材料，而且不以任何方式为您的任何此等使用承担责任。
+\n\n令人反感的材料\n &#160;&#160;&#160;&#160;&#160;&#160;
+您理解，在使用服务时，您也许会遇到您可能视为是无礼的或令人反感的材料，此类内容可能会也可能不会被确定为含有露骨的材料。尽管如此，您同意自行承担风险使用服务，对于可能被认定属于无礼、或令人反感的材料，不向您承担任何责任。产品的种类和描述仅为方便之目的而提供，您同意不保证它们的准确性。
+\n\n重要安全信息\n &#160;&#160;&#160;&#160;&#160;&#160;
+为避免在您使用通过服务提供的产品的过程中发生肌肉、关节或眼睛的损伤，您应经常停下来休息片刻，如果您感到酸痛、疲劳或其他不适，应休息更长时间。有一小部分人在有闪烁的光或图案的环境下（包括但不限于在玩视频游戏或观看视频的过程中）可能出现突然发作或短暂昏厥的情况。症状可包括头晕、恶心、不自主运动、丧失知觉、视力模糊、刺痛、麻木或其他不适。如果您曾经有过上述症状或类似症状，在使用通过服务提供的产品前请咨询医生意见，如果在使用该等产品的过程中发生上述症状，请立即停止使用该等产品，去看医生。家长应注意观察孩子使用通过服务提供的产品时是否有相关症状表现。
+\n\n知识产权\n &#160;&#160;&#160;&#160;&#160;&#160;
+您同意，服务（包括但不限于产品、图片、用户界面、视频剪辑、编辑内容和安装服务所使用的脚本和软件）包含和/或其许可方拥有的专有信息和材料，受适用的知识产权法律和其他法律（包括但不限于著作权法律）的保护。您同意，您不会以任何方式使用该等专有信息或材料，但为了根据本协议使用服务的目的而使用的除外。除本协议条款明确允许的以外，不得以任何形式或任何方式复制服务的任何部分。您同意，不以任何方式修改、出租、租赁、出借、 出售、分发服务，或以服务为基础创作衍生作品，并且您不得以任何未经授权的方式利用服务，包括但不限于侵占网络容量或使网络容量负荷过重。
+
+不论本协议中有任何其他规定，及许可方保留在任何时候不经通知即变更、暂停、去除或禁止访问任何产品、内容或构成服务一部分的其他材料的权利。在任何情况下，均不会因做出该等变更而承担任何责任。还可在任何情况下不经通知即对服务的某些功能或部分的使用或访问施加限制，而无须为此承担任何责任。
+\n\n终止\n &#160;&#160;&#160;&#160;&#160;&#160;
+虽然我们尽力提供最优质的服务,但您同意使用这些服务是在您自己的风险范围内。保留在任何时候无论是否通知您而修改、暂停或停止服务（或其任何部分或内容）的权利，如果行使该等权利，其不就此对您或任何第三方承担责任。
+\n\n豁免和赔偿\n&#160;&#160;&#160;&#160;&#160;&#160;
+通过使用服务，您同意在法律允许的范围内就因您违反本协议、您使用服务、在对涉嫌违反本协议的行为进行调查的过程中采取的任何行动、或做出的已发生违反本协议的行为的结论或决定而引起的任何权利主张向,其董事、高管、雇员、关联公司、代理、承包商和许可方进行赔偿，并使其免受损害。这意味着您不能因做出去除或拒绝处理任何信息或内容、对您予以警告、暂停或终止您对服务的访问、或在对涉嫌违反行为的调查中采取任何其他行动的决定造成的，或是因做出已发生违反本协议的行为的结论而造成的损失或损害而对、其董事、高管、雇员、关联公司、代理、承包商和许可方起诉，或从上述各方取得任何损害赔偿。此项豁免和赔偿规定适用于本协议中所述或拟议的一切违反。
+\n\n变更\n&#160;&#160;&#160;&#160;&#160;&#160;
+保留随时修改本协议并就您对有关产品的使用施加新的或额外的条款或条件的权利。前述修改以及额外的条款和条件将立即生效并纳入本协议。您对有关产品的继续使用将被视为构成您对该等修改以及额外条款和条件的接受。
+\n\n其他规定\n&#160;&#160;&#160;&#160;&#160;&#160;
+本协议构成您与之间的全部协议，适用于您对有关产品的使用，取代您与之间以前达成的任何协议。在您使用关联公司服务、第三方内容或第三方软件时，您可能还须遵守其他的条款与条件。如果本协议的任何部分被判定为无效或不可强制执行，则该部分应按与适用法律一致的方式加以解释，以尽可能地反映各方的原意，而其余部分仍应充分有效。未强制执行本协议中的任何权利或规定不构成对该等规定或任何其他规定的放弃。不对其不能控制的原因造成的未履行义务情况承担责任。
+可通过向您的帐户电邮地址发送电子邮件、向您的帐户通讯地址邮寄信件，就有关产品向您发送通知。通知立即生效。
+有权采取其认为合理必要或适当的措施以执行和/或核实对本协议任何部分的遵守情况。您同意，有权向执法机构、政府官员和/或某一 第三方披露其认为对于执行和/或核实对本协议任何部分的遵守情况而言是合理必要或适当的任何注册资料和/或帐户信息（包括但不限于对与您使用有关产品/或有关产品是非法的和/或侵犯第三方权利的第三方权利主张有关的任何法律程序予以配合的权利），而无须对您承担责任。
+谢谢您花时间阅读这些条款。出于您对以上条款的理解和同意,我们将会提供更好的用户体验。如果您有什么疑问请随时联系我们的客服。
+\n\n&#160;&#160;&#160;&#160;&#160;&#160;更新时间：2019年8月6日</string>
+
+    <string name="moviedetails_vipinfo">Current resources are limited to members, and members can enjoy them freely.</string>
+    <string name="moviedetails_later">Talk later</string>
+    <string name="moviedetails_openvip">Open membership</string>
+    <string name="vipactivity_okvip_text">You have completed the payment.</string>
+    <string name="vipactivity_novip_text">Payment not completed</string>
+    <string name="vipactivity_ok">I got it!</string>
+    <string name="vipactivity_text1">黄金会员特权</string>
+    <string name="vipactivity_text2">黄金会员套餐</string>
+    <string name="vipactivity_text3">海量院线大片抢先看，新剧热剧极速追新同步看，追剧不等待，省时无广告精彩立现</string>
+    <string name="vipactivity_text9">错过了最新的直播节目？想找到近两周内的中博会看内容？订购该服务即可轻松畅享，TV/iPad/手机端随你享</string>
+    <string name="vipactivity_text4">支付方式</string>
+    <string name="vipactivity_text5">我同意并接受</string>
+    <string name="vipactivity_text6">《VIP会员服务协议》</string>
+    <string name="vipactivity_text7">微信支付</string>
+    <string name="vipactivity_text8">Paypal支付</string>
+
+    <string name="moviedetails_director">director</string>
+    <string name="moviedetails_actor">actor</string>
+
+
+    <!--SplashActivity-->
+    <string name="splashactivity_text1">Does the current 4G network continue to download?</string>
+    <string name="splashactivity_text2">NO</string>
+    <string name="splashactivity_text3">YES</string>
+    <string name="splashactivity_text4">Users in Mainland China are temporarily unavailable.</string>
+    <string name="splashactivity_text5">Got it</string>
+    <string name="splashactivity_text6">Renewed!</string>
+    <string name="splashactivity_text7">Talk later</string>
+    <string name="splashactivity_text8">Update immediately</string>
+    <string name="splashactivity_text9">Warm reminder</string>
+    <string name="splashactivity_text10">NiHaoTV Call privileges are required,\n whether to open immediately</string>
+    <string name="splashactivity_text11">Open immediately</string>
+    <string name="splashactivity_text12">Storage permissions are unavailable</string>
+    <string name="splashactivity_text13">请在-应用设置-权限-中，允许支付宝使用存储权限来保存用户数据</string>
+    <string name="splashactivity_cancel">Cancel</string>
+    <string name="splashactivity_success">Privilege Acquisition Successful</string>
+
+    <!--BangtvMainActivity-->
+    <string name="bangtvmainactivity_exit">Re-press Exit</string>
+    <string name="bangtvmainactivity_text1">Click on the avatar to log in</string>
+    <string name="bangtvmainactivity_text2">This function is not open yet</string>
+
+    <!--HistoryListActivity-->
+    <string name="historyactivity_nohstory">You haven\'t seen the recording yet. Watch the video now.</string>
+
+    <!--MovieListActivity-->
+    <string name="movielistactivity_all">All</string>
+    <string name="movielistactivity_screen">Screen</string>
+
+    <!--SettingActivity-->
+    <string name="settingactivity_exitsucess">All</string>
+    <string name="settingactivity_text1">&#160;&#160;Tips</string>
+    <string name="settingactivity_text2">No updated version is available</string>
+
+
+    <!--  AppIntroduceActivity  -->
+    <string name="vip">Member Center</string>
+    <string name="about_network_diagnosis">Network diagnosis</string>
+    <string name="about_share">share</string>
+    <string name="about_feedback">Feedback</string>
+    <string name="github_url">https://www.nihaotv.net</string>
+    <string name="share_title">Share NiHaoTVApp</string>
+    <string name="feedback_titlle">Feedback</string>
+    <string name="feedback_message">如果您有任何意见或者发现了Bug，可以在GitHub上给我提Issuse，我会第一时间关注并解决，谢谢。</string>
+
+
+
+    <string name="error_text">Network connection failed, please check the network</string>
+    <string name="error_text2">Data loading failure</string>
+    <string name="load_more">Loading…</string>
+    <string name="load_more1">Please wait while loading……</string>
+    <string name="apkInstallReceiver_tvfail">Authorization failed to install the application</string>
+    <string name="androidopermission_tvshow">To upgrade NiHaoTV normally, click the Settings button to allow the installation of applications from unknown sources. This function is limited to version upgrades.
+
+</string>
+
+    <!-- LoginActivity -->
+    <string name="LoginActivity_Net">The current network is unavailable, please check the network settings
+
+</string>
+    <string name="LoginActivity_WX">You haven\'t installed Wechat yet</string>
+    <string name="LoginActivity_UserName">User name cannot be empty</string>
+    <string name="LoginActivity_PassWord">Password cannot be empty</string>
+    <string name="LoginActivity_Login">正在登录，请稍后……</string>
+    <string name="LoginActivity_LoginFial">登录失败，请稍候再试……</string>
+    <string name="LoginActivity_Loadfail">数据加载失败</string>
+    <string name="LoginActivity_LoginSucc">登录成功</string>
+
+    <!-- RegMailActivity -->
+    <string name="RegMailActivity_Net">当前网络不可用,请检查网络设置</string>
+    <string name="RegMailActivity_UserProtocol">请勾选用户协议</string>
+    <string name="RegMailActivity_Mail">邮箱不能为空</string>
+    <string name="RegMailActivity_PassWord">密码不能为空</string>
+    <string name="RegMailActivity_Corfim">请您确认密码</string>
+    <string name="RegMailActivity_FormatWrong">邮箱格式不正确</string>
+    <string name="RegMailActivity_PassWordWrong">密码格式不正确</string>
+    <string name="RegMailActivity_PassWordAtLeastEigth">密码至少是8位</string>
+    <string name="RegMailActivity_PassWordWrongAgain">两次密码输入不一致</string>
+    <string name="RegMailActivity_LoginFial">注册失败，请稍候再试……</string>
+    <string name="RegMailActivity_Loadfail">数据加载失败</string>
+    <string name="RegMailActivity_RegSucc">注册成功</string>
+
+    <!-- VipActivity -->
+    <string name="VipActivity_InstallWX">请您先安装微信客户端！</string>
+    <string name="VipActivity_LoadFial">数据加载失败</string>
+    <string name="VipActivity_PayPalSucc">PayPal支付成功</string>
+    <string name="VipActivity_PayPalCancel">PayPal支付取消</string>
+
+    <!-- WXLoginActivity -->
+    <string name="WXLoginActivity_InstallWX">你還未安裝微信</string>
+
+    <!-- LivePlayerActivity -->
+    <string name="LivePlayerActivity_InitPlayer">Initialize Player...</string>
+    <string name="LivePlayerActivity_InitPlayerComplete">【Complete】</string>
+    <string name="LivePlayerActivity_InitPlayerBuff">Video buffering...</string>
+    <string name="LivePlayerActivity_InitPlayerFail">【Fail】</string>
+    <string name="LivePlayerActivity_AllChannal">All channels</string>
+    <string name="LivePlayerActivity_AgainExit">Re-press Exit</string>
+
+    <!-- VideoPlayerActivity -->
+    <string name="VideoPlayerActivity_InitPlayer">Initialize Player...</string>
+    <string name="VideoPlayerActivity_InitPlayerComplete">【Complete】</string>
+    <string name="VideoPlayerActivity_InitPlayerBuff">Video buffering...</string>
+    <string name="VideoPlayerActivity_InitPlayerFail">【Fail】</string>
+    <string name="VideoPlayerActivity_FreeLook">In the first </string>
+    <string name="VideoPlayerActivity_FreeLookMin">minutes of the trial, members can watch the whole show.</string>
+    <string name="VideoPlayerActivity_FreeLookPart">episodes, members can watch the whole episode.</string>
+    <string name="VideoPlayerActivity_AgainExit">Re-press Exit</string>
+    <string name="VideoPlayerActivity_FreeLookEnd">At the end of the trial, members can watch it free of charge.</string>
+    <string name="VideoPlayerActivity_Back">Return</string>
+    <string name="VideoPlayerActivity_LogExit">登录/开通VIP</string>
+
+
+    <!-- LiveSecondListAdapter -->
+    <string name="LiveSecondListAdapter_VipChannal">vip 会员频道</string>
+
+    <!-- MovieListDetailsSelectionAdapter -->
+    <string name="MovieListDetailsSelectionAdapter_At">The </string>
+    <string name="MovieListDetailsSelectionAdapter_Season">phase</string>
+    <string name="MovieListDetailsSelectionAdapter_Part">episodes</string>
+
+    <!-- BangTVMainActivity -->
+    <string name="BangTVMainActivity_Login">点击头像登录</string>
+
+    <!-- HistoryListAdapter -->
+    <string name="HistoryListAdapter_At">The</string>
+    <string name="HistoryListAdapter_Season">phase</string>
+    <string name="HistoryListAdapter_Part">episodes</string>
+    <string name="historyactivity_history">Watch to：</string>
+
+
+
+
+</resources>

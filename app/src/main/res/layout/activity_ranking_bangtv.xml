@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="@dimen/app_bar_default_elevation">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextAppearance="@style/ToolBar.TitleText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_big_text_size"
+                android:text="@string/activity_rangking_title"/>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tl_textSelectColor="@color/red"
+            app:tl_indicator_color="@color/red"
+            app:tl_textUnselectColor="@color/black_80"
+            android:paddingLeft="@dimen/default_small_padding"
+            android:paddingRight="@dimen/default_small_padding"
+            android:isScrollContainer="false"
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            app:tl_indicator_corner_radius="@dimen/tab_indicator_corner_tiny_radius"
+            app:tl_indicator_height="@dimen/tab_indicator_small_height"
+            app:tl_indicator_margin_left="5dp"
+            app:tl_indicator_width="@dimen/tab_indicator_center_width"
+            app:tl_tab_space_equal="false"
+            android:layout_marginStart="@dimen/default_tiny_padding"
+            android:layout_marginEnd="@dimen/default_tiny_padding"
+            app:tl_tab_padding="@dimen/tab_bar_item_padding" />
+</LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.china.cibn.bangtvmobile.bangtv.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>
+<com.miguelcatalan.materialsearchview.MaterialSearchView
+android:id="@+id/search_view"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    />
+    </FrameLayout>
+

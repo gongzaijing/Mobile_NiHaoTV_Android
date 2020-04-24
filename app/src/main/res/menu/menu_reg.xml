@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".bangtv.module.user.reg.RegMailActivity">
+
+	<item
+		android:id="@+id/id_reg"
+		android:tooltipText="注册"
+		android:orderInCategory="100"
+		android:title="注册"
+		app:showAsAction="always"/>
+
+</menu>

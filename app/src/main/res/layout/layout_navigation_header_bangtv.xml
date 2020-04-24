@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/header_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_header_height"
+    android:clickable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_nihao">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/background_image_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center|end|bottom"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/home_menu_bg_click"-->
+            <!--android:tint="@color/nav_head_image_background" />-->
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/user_avatar_view"
+            android:layout_width="@dimen/navigation_avatar_size"
+            android:layout_height="@dimen/navigation_avatar_size"
+            android:layout_gravity="start|top"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/default_grow_margin"
+            android:src="@drawable/ico_user_default"
+         />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/default_grow_margin"
+            android:layout_marginTop="@dimen/default_grow_margin"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/iv_head_switch_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_grow_margin"
+                android:src="@drawable/ic_switch_night" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/subtitle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_avatar_view"
+            android:layout_marginStart="@dimen/default_general_margin"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingTop="@dimen/default_tiny_padding">
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="@dimen/default_tiny_padding">-->
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                      android:layout_marginTop="10dp"
+                    android:paddingLeft="@dimen/default_tiny_padding"
+                    android:textSize="@dimen/default_small_text_size" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/user_other_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="@dimen/default_tiny_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/navigation_subtitle_secondary_text_size" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
