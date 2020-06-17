@@ -307,7 +307,7 @@ public class BangTVMainActivity extends RxBaseActivity
       }
     }
 
-    return true;
+    return super.onKeyDown(keyCode, event);
   }
 
 
